@@ -1,0 +1,181 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Popins";
+  background: #FAFBFF;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  gap: 70px;
+}
+
+.dashboard__sidebar {
+  min-width: 306px;
+  background: #FFF;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  padding: 36px 28px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar__header {
+  margin-bottom: 40px;
+}
+.sidebar__header a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.sidebar__header a span {
+  color: #000;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.26px;
+  margin-left: 7px;
+}
+.sidebar__header a span span {
+  margin-left: -5px;
+  color: #838383;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.1px;
+}
+
+.sidebar__menu {
+  margin-bottom: 450px;
+}
+.sidebar__menu li {
+  margin-bottom: 14px;
+  padding: 11px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.sidebar__menu li:hover {
+  border-radius: 8px;
+  background: #5932EA;
+}
+.sidebar__menu li:hover a {
+  color: white;
+}
+.sidebar__menu li:hover a svg {
+  filter: grayscale(0%);
+}
+.sidebar__menu a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #9197B3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+
+.sidebar__footer .sidebar__footer-get-pro {
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(108deg, #EAABF0 7.37%, #4623E9 95.19%);
+  padding: 26px 34px;
+}
+.sidebar__footer .sidebar__footer-get-pro p {
+  color: #FFF;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  margin-bottom: 20px;
+}
+.sidebar__footer .sidebar__footer-get-pro button {
+  border: none;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 2px 4px 4px 0px rgba(79, 42, 234, 0.17);
+  padding: 10px 0px;
+  width: 203px;
+  cursor: pointer;
+  color: #4925E9;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  transition: all 0.4s;
+  padding-bottom: 20px;
+}
+.sidebar__footer .sidebar__footer-get-pro button:hover {
+  background-color: #4623E9;
+  color: white;
+}
+.sidebar__footer .sidebar__footer-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar__footer .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar__footer .user h4 {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.sidebar__footer .user p {
+  color: #757575;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+
+.dashboard__main {
+  padding: 40px 0px;
+  padding-left: 40px;
+  margin: left auto;
+}
